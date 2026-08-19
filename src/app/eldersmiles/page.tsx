@@ -42,7 +42,7 @@ export default function EldersmilesPage() {
         ])}
       />
 
-      <section className="bg-surface-tint pt-12 pb-14 md:pt-16 md:pb-16">
+      <section className="bg-surface-tint pt-10 pb-10 md:pt-12 md:pb-12">
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div>

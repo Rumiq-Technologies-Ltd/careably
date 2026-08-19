@@ -30,11 +30,9 @@ export const SERVICE_CATEGORIES: readonly ServiceCategory[] = [
     key: "wellness",
     icon: PersonStanding,
     title: "Wellness",
-    rows: [
-      ["Therapy", "Fitness", "Nutrition"],
-      ["Mental Health", "Activities"],
-      ["Preventive & Lifestyle Services"],
-    ],
+    rows: [["Therapy", "Fitness", "Nutrition"],
+      ["Mental Health", " Art & Activities"],
+      ["Preventive & Lifestyle Services"],],
   },
   {
     key: "support",

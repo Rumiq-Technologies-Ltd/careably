@@ -26,7 +26,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
       <Container>
-        <div className="flex min-h-[520px] flex-col justify-center py-12 lg:py-20">
+        <div className="flex min-h-[520px] flex-col justify-center py-10 lg:py-14">
           <div className="lg:max-w-[46%]">
             <h1 className="text-[clamp(2.25rem,5vw,4.25rem)] leading-[1.05]">
               Healthcare and services, brought{" "}

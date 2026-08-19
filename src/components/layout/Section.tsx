@@ -18,7 +18,12 @@ const toneClass: Record<Tone, string> = {
   teal: "bg-linear-to-r from-navy-900 to-teal-800 text-white",
 }
 
-/** Vertical rhythm for the whole site. Nothing sets its own section padding. */
+/**
+ * Vertical rhythm for the whole site. Nothing sets its own section padding.
+ *
+ * Kept tight on purpose: the original py-16/20/24 scale left 128-192px of dead
+ * space between adjacent sections once their own paddings stacked.
+ */
 export function Section({
   id,
   tone = "white",
@@ -43,7 +48,7 @@ export function Section({
       id={id}
       className={cn(
         toneClass[tone],
-        compact ? "py-11 md:py-14" : "py-16 md:py-20 lg:py-24",
+        compact ? "py-8 md:py-10" : "py-10 md:py-14 lg:py-16",
         // Anchored sections need room under the sticky header when jumped to.
         id && "scroll-mt-24",
         className

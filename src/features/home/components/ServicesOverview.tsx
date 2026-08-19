@@ -10,7 +10,7 @@ import { SERVICE_CATEGORIES, SERVICES_HEADING } from "@/constants/services"
  */
 export function ServicesOverview() {
   return (
-    <Section id="services" tone="tint">
+    <Section id="categories" tone="tint">
       <h2 className="text-center text-[clamp(1.75rem,3.2vw,2.375rem)]">
         {SERVICES_HEADING}
       </h2>
