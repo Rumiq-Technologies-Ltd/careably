@@ -38,10 +38,10 @@ Rules enforced throughout: no em-dashes, no placeholder data published as fact, 
 | `CTA.partner` | Partner With Careably | Hero secondary, CTA band, form submit, footer |
 | `CTA.services` | Explore Services | Hero primary |
 
-**Navigation:** What We Do · Services · For Communities · ElderSmiles · Contact
+**Navigation:** Services · For Communities · ElderSmiles · Contact
 
 > [!NOTE]
-> The design's nav is: What We Do, Services, For Communities, For Families, About, Contact. "For Families" and "About" have no copy and no route, so they are held back rather than shipped as dead links. See `docs/assets.md`.
+> The design's nav is: What We Do, Services, For Communities, For Families, About, Contact. "What We Do" was removed with the section it pointed at. "For Families" and "About" have no copy and no route, so they are held back rather than shipped as dead links. See `docs/assets.md`.
 
 ---
 
@@ -63,11 +63,13 @@ Healthcare and services, brought to you.
 
 **CTAs:** `Explore Services` (primary) · `Partner With Careably` (outline)
 
-**Image:** `public/images/hero-care.jpg`, bleeding right under a left-to-right white gradient.
+**Image:** `public/images/hero-care.jpg`. From `lg` it bleeds to the right edge beside the copy, with an 80px fade on its left edge only. Below `lg` it sits in normal flow beneath the copy. Nothing is laid over it.
+
+"Explore Services" targets `#services`, the two network services.
 
 ---
 
-### 2. Services — `id="services"`
+### 2. Service categories — `id="categories"`
 
 **Heading:** One Community. Many Needs. One Solution.
 
@@ -75,38 +77,55 @@ Three categories, dot-separated rows:
 
 | Health | Wellness | Support |
 | --- | --- | --- |
-| Dental · Podiatry · Audiology | Therapy · Fitness · Nutrition | Transportation · Mobility |
-| Primary Care · Specialty Care | Mental Health · Activities | Personal Support · Coordination |
-| Preventive & Chronic Care | Preventive & Lifestyle Services | And More Community Services |
+| Dental · Podiatry · Audiology | Art and Activities | Transportation · Mobility |
+| Primary Care · Specialty Care | | Personal Support · Coordination |
+| Preventive & Chronic Care | | And More Community Services |
 
 > [!NOTE]
 > The HTML scaffold had **four** columns (Health, Arts & Wellness, Support, Community Partners) with the heading "One partner. Many solutions for every need." The design supersedes both.
+>
+> Wellness was reduced to the single line "Art and Activities" at the client's request, replacing "Therapy · Fitness · Nutrition", "Mental Health · Activities" and "Preventive & Lifestyle Services".
 
 ---
 
-### 3. The Careably Difference — `id="what-we-do"`
+### 3. Our services — `id="services"`
 
-**Eyebrow:** The Careably Difference
+The destination for the hero's "Explore Services" button and the nav's "Services" item.
 
-**Heading:** All the right services. One trusted partner.
+**Heading:** Our services
 
-**Body:**
-> Careably is a comprehensive service platform that connects residents, families, communities and providers, making it easier to access the care and services that improve quality of life.
+**Intro:**
+> Careably coordinates the providers who deliver care inside your community. These are the services running today.
 
-> [!IMPORTANT]
-> The design sets an em-dash before "making". Rewritten to a comma.
+Two cards. Only services that actually operate appear here.
 
-**CTA:** How It Works
+**ElderSmiles** (internal, links to `/eldersmiles`)
+> Professional dental care delivered right where residents live.
 
-**Ecosystem diagram:**
+> Clinical teams travel to the community with portable equipment and treat residents in a designated room or at bedside.
 
-- Top node: Residents & Families
-- Bottom node: Communities
-- Centre: Careably
-- Left: Dental · Podiatry · Audiology · Primary Care
-- Right: Therapy · Wellness · Transportation · And More
+> Built for residents with dementia, limited mobility, behavioral challenges and complex medical histories.
 
-The diagram is a `figure` with a screen-reader caption; the connectors and arrows are decorative and hidden. Below `lg` it collapses to a plain stack.
+Highlights: Routine cleanings & exams · Digital x-rays · Denture care & more · Within your community
+
+Link: **Learn more about ElderSmiles**
+
+**Florida Cares Transport** (external, links to `https://flcarestransport.com/`)
+> Compassionate medical transportation, every step of the way.
+
+> Non-emergency medical transportation for passengers with mobility needs, wheelchair users and seniors.
+
+> Serving Greater Orlando and surrounding areas, including all local airports.
+
+Highlights: Wheelchair transport with ramps and lifts · Stretcher transport, bed to bed · Ambulatory, door to door · Stair chair service
+
+Link: **Visit Florida Cares Transport**, opening in a new tab with `rel="noopener noreferrer"` and a screen-reader "(opens in a new tab)" notice.
+
+> [!WARNING]
+> Florida Cares Transport is a separate company. Every fact above is taken from flcarestransport.com, including the tagline, which is quoted. Do not embellish their claims or restate them as Careably's own.
+
+> [!NOTE]
+> This section replaces two things: the design's "Careably Difference" block with its ecosystem diagram, and the single "Meet ElderSmiles" promo card. Both were removed at the client's request. The design's three carousel dots under the ElderSmiles card anticipated exactly this, a rotating set of services; there are now two, shown side by side rather than rotating.
 
 ---
 
@@ -143,24 +162,7 @@ Senior Living · Assisted Living · Memory Care · Group Homes · Supported Livi
 
 ---
 
-### 6. Meet ElderSmiles
-
-**Eyebrow:** A Careably Service
-**Heading:** Meet ElderSmiles
-**Body:** Professional dental care delivered right where residents live.
-
-**Highlights:** Routine cleanings & exams · Digital x-rays · Denture care & more · Within your community
-
-**Link:** Learn more about ElderSmiles → `/eldersmiles`
-
-> [!NOTE]
-> The design renders the link text as "Learn more about ElderSmlies". Corrected.
->
-> The design also shows three carousel dots under this card, implying a rotating set of Careably services. Only ElderSmiles exists today, so it ships as a single static card. A carousel with one slide is a lie about the content.
-
----
-
-### 7. Partner CTA band
+### 6. Partner CTA band
 
 **Heading:** Better care. Stronger communities. Together.
 **Body:** Let's bring more convenience, coordination and care to your community.

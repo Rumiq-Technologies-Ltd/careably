@@ -69,6 +69,8 @@ Two client artefacts, and they disagree in places:
 
 **Where they conflict, the design wins.** Known conflicts, already resolved: three service categories rather than four; "Wellness" rather than "Arts & Wellness"; the hero headline is "Healthcare and services, brought to you."; the design adds the ElderSmiles card, which the HTML lacks. The HTML's "Who We Serve" block was kept even though the design omits it, because the design's "For Communities" nav item otherwise has nowhere to point.
 
+**Since removed at the client's request**, and not to be reinstated from the design: the "Careably Difference" section with its ecosystem diagram, and the "What We Do" nav item that pointed at it. The Wellness category is now a single line, "Art and Activities". The ElderSmiles promo card was replaced by the two-card `Our services` section.
+
 Approved copy lives in **`docs/content.md`**. Edit copy there first, then the component. Lists render from typed data in `src/constants/`.
 
 ### Content rules (non-negotiable)
@@ -82,13 +84,16 @@ The design shows `(407) 123-4567` and `info@careably.care`. The first is a place
 **2.3 — Zero em-dashes.**
 No `—` and no `–` anywhere user-visible. The design copy contains three (in the hero subtext, the Difference body, and two Why cards). All were rewritten to commas. Keep it that way.
 
-**2.4 — No dead links.**
+**2.4 — Two services, and only two.**
+ElderSmiles and Florida Cares Transport are what the network actually runs today. The `Our services` section and the hero's "Explore Services" button both lead there. Do not list aspirational providers. Florida Cares Transport is a separate company: its facts come from flcarestransport.com, its card links out with `target="_blank" rel="noopener noreferrer"`, and its claims must not be embellished into ours.
+
+**2.5 — No dead links.**
 The design's nav shows "For Families" and "About", and its footer shows Company, Services and Resources columns. None of those have copy or a route. They are held back rather than shipped pointing at `#`. Restore them as content lands, and see `docs/assets.md`.
 
-**2.5 — No PHI invitation.**
+**2.6 — No PHI invitation.**
 The inquiry form carries helper text telling people not to include medical or health details. A public form that collects health information creates a records-handling obligation nobody wants.
 
-**2.6 — ElderSmiles content keeps its hedges.**
+**2.7 — ElderSmiles content keeps its hedges.**
 `/eldersmiles` inherits the old material's disclosures verbatim in meaning, including **"ElderSmiles does not currently participate in Florida Medicaid."** and the "Care is never forced" statement. Do not trim either for length.
 
 ---
@@ -159,7 +164,7 @@ Path alias: `@/*` → `src/*`.
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Home. Seven sections, ends in the partner CTA band. |
+| `/` | Home. Six sections, ends in the partner CTA band. |
 | `/contact` | Partner inquiry form. |
 | `/eldersmiles` | The dental service inside the network. |
 | `/thank-you` | Post-submission confirmation. `noindex`. |

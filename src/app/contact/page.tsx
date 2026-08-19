@@ -33,7 +33,7 @@ export default function ContactPage() {
         ])}
       />
 
-      <section className="bg-surface-tint pt-12 pb-14 md:pt-16 md:pb-16">
+      <section className="bg-surface-tint pt-10 pb-10 md:pt-12 md:pb-12">
         <Container>
           <h1 className="max-w-3xl text-[clamp(1.875rem,3.6vw,2.75rem)]">
             {CTA.partner}
