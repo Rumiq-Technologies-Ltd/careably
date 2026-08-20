@@ -57,7 +57,7 @@ export default function EldersmilesPage() {
 
             <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
               <Image
-                src="/images/dr-sheryar.png"
+                src="/images/dr-sheryar-khan.jpg"
                 alt="An ElderSmiles dentist treating a resident"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
