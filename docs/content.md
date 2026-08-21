@@ -92,7 +92,7 @@ Three categories, dot-separated rows:
 
 The destination for the hero's "Explore Services" button and the nav's "Services" item.
 
-**Heading:** Our services
+**Heading:** Our Services
 
 **Intro:**
 > Careably coordinates the providers who deliver care inside your community. These are the services running today.
