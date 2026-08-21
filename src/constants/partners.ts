@@ -77,6 +77,6 @@ export const NETWORK_SERVICES: readonly NetworkService[] = [
   },
 ]
 
-export const NETWORK_SERVICES_HEADING = "Our services"
+export const NETWORK_SERVICES_HEADING = "Our Services"
 export const NETWORK_SERVICES_INTRO =
-  "Careably coordinates the providers who deliver care inside your community. These are the services running today."
+  "Careably coordinates the providers who deliver care inside your community. These are the services we currently offer ."
