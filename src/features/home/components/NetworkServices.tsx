@@ -12,7 +12,7 @@ import {
  * The two services operating in the network, and the destination for the
  * hero's "Explore Services" button.
  *
- * ElderSmiles links to its page on this site; Florida Cares Transport is a
+ * Contemporary Dental links to its page on this site; Florida Cares Transport is a
  * separate company, so its card opens their site in a new tab and says so both
  * visually and to screen readers.
  */

@@ -38,8 +38,8 @@ export type NetworkService =
  */
 export const NETWORK_SERVICES: readonly NetworkService[] = [
   {
-    key: "eldersmiles",
-    name: "ElderSmiles",
+    key: "contemporaryDental",
+    name: "Contemporary Dental",
     icon: Smile,
     summary: "Professional dental care delivered right where residents live.",
     detail: [
@@ -52,8 +52,8 @@ export const NETWORK_SERVICES: readonly NetworkService[] = [
       "Denture care & more",
       "Within your community",
     ],
-    href: ROUTES.eldersmiles,
-    linkLabel: "Learn more about ElderSmiles",
+    href: ROUTES.contemporaryDental,
+    linkLabel: "Learn more about Contemporary Dental",
     external: false,
   },
   {

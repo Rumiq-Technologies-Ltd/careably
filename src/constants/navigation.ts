@@ -14,14 +14,14 @@ import { ANCHORS, ROUTES } from "@/constants/routes"
 export const PRIMARY_NAV = [
   { label: "Services", href: ANCHORS.services },
   { label: "For Communities", href: ANCHORS.forCommunities },
-  { label: "ElderSmiles", href: ROUTES.eldersmiles },
+  { label: "Contemporary Dental", href: ROUTES.contemporaryDental },
   { label: "Contact", href: ROUTES.contact },
 ] as const
 
 export const FOOTER_EXPLORE = [
   { label: "Services", href: ANCHORS.services },
   { label: "For Communities", href: ANCHORS.forCommunities },
-  { label: "ElderSmiles", href: ROUTES.eldersmiles },
+  { label: "Contemporary Dental", href: ROUTES.contemporaryDental },
 ] as const
 
 export type NavItem = (typeof PRIMARY_NAV)[number] | (typeof FOOTER_EXPLORE)[number]
