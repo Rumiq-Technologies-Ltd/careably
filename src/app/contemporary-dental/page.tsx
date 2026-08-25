@@ -7,38 +7,38 @@ import { Section } from "@/components/layout/Section"
 import { PartnerCtaBand } from "@/components/shared/PartnerCtaBand"
 import { StructuredData } from "@/components/shared/StructuredData"
 import {
-  ELDERSMILES_BILLING,
-  ELDERSMILES_CLUSTERS,
-  ELDERSMILES_MEDICAID_DISCLOSURE,
-  ELDERSMILES_PROMO,
-  ELDERSMILES_SPECIALIZED,
-} from "@/constants/eldersmiles"
+  CONTEMPORARY_DENTAL_BILLING,
+  CONTEMPORARY_DENTAL_CLUSTERS,
+  CONTEMPORARY_DENTAL_MEDICAID_DISCLOSURE,
+  CONTEMPORARY_DENTAL_PROMO,
+  CONTEMPORARY_DENTAL_SPECIALIZED,
+} from "@/constants/contemporaryDental"
 import { ROUTES } from "@/constants/routes"
 import { SITE } from "@/constants/site"
 import { buildBreadcrumbSchema } from "@/constants/structuredData"
 
 const description =
-  "ElderSmiles is the dental service in the Careably network, delivering professional dental care right where residents live."
+  "Contemporary Dental is the dental service in the Careably network, delivering professional dental care right where residents live."
 
 export const metadata: Metadata = {
-  title: "ElderSmiles",
+  title: "Contemporary Dental",
   description,
-  alternates: { canonical: ROUTES.eldersmiles },
+  alternates: { canonical: ROUTES.contemporaryDental },
   openGraph: {
-    title: `ElderSmiles | ${SITE.name}`,
+    title: `Contemporary Dental | ${SITE.name}`,
     description,
-    url: `${SITE.url}${ROUTES.eldersmiles}`,
+    url: `${SITE.url}${ROUTES.contemporaryDental}`,
   },
 }
 
 export default function EldersmilesPage() {
-  const [designedFor, canInclude, neverForced] = ELDERSMILES_SPECIALIZED
+  const [designedFor, canInclude, neverForced] = CONTEMPORARY_DENTAL_SPECIALIZED
 
   return (
     <>
       <StructuredData
         data={buildBreadcrumbSchema([
-          { name: "ElderSmiles", path: ROUTES.eldersmiles },
+          { name: "Contemporary Dental", path: ROUTES.contemporaryDental },
         ])}
       />
 
@@ -46,19 +46,19 @@ export default function EldersmilesPage() {
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div>
-              <p className="eyebrow">{ELDERSMILES_PROMO.eyebrow}</p>
+              <p className="eyebrow">{CONTEMPORARY_DENTAL_PROMO.eyebrow}</p>
               <h1 className="mt-3.5 text-[clamp(1.875rem,3.6vw,2.75rem)]">
-                ElderSmiles
+                Contemporary Dental
               </h1>
               <p className="measure mt-5 text-[1.125rem] leading-relaxed text-ink-muted">
-                {ELDERSMILES_PROMO.body}
+                {CONTEMPORARY_DENTAL_PROMO.body}
               </p>
             </div>
 
             <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
               <Image
                 src="/images/dr-sheryar-khan.jpg"
-                alt="An ElderSmiles dentist treating a resident"
+                alt="An Contemporary Dental dentist treating a resident"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 loading="eager"
@@ -76,7 +76,7 @@ export default function EldersmilesPage() {
         </h2>
 
         <div className="reveal mt-10 grid gap-10 md:grid-cols-3">
-          {ELDERSMILES_CLUSTERS.map((cluster) => (
+          {CONTEMPORARY_DENTAL_CLUSTERS.map((cluster) => (
             <div key={cluster.title}>
               <h3 className="font-sans text-[0.9375rem] font-bold tracking-wide text-teal-800 uppercase">
                 {cluster.title}
@@ -126,7 +126,7 @@ export default function EldersmilesPage() {
         </h2>
 
         <div className="measure mt-6 flex flex-col gap-4 text-[1.0625rem] leading-relaxed text-ink">
-          {ELDERSMILES_BILLING.map((line) => (
+          {CONTEMPORARY_DENTAL_BILLING.map((line) => (
             <p key={line}>{line}</p>
           ))}
         </div>
@@ -137,7 +137,7 @@ export default function EldersmilesPage() {
         */}
         <p className="measure mt-8 flex items-start gap-3 rounded-xl bg-surface-tint p-6 text-[1.0625rem] leading-relaxed text-navy-900">
           <Info className="mt-0.5 size-5 shrink-0 text-teal-700" strokeWidth={1.75} aria-hidden />
-          {ELDERSMILES_MEDICAID_DISCLOSURE}
+          {CONTEMPORARY_DENTAL_MEDICAID_DISCLOSURE}
         </p>
       </Section>
 

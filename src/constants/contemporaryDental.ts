@@ -11,20 +11,20 @@ import {
 } from "lucide-react"
 
 /**
- * ElderSmiles is a dental provider inside the Careably network, not a separate
+ * Contemporary Dental is a dental provider inside the Careably network, not a separate
  * brand with its own site. This file holds everything the promo card on the
- * home page and the /eldersmiles service page need.
+ * home page and the /contemporaryDental service page need.
  *
- * Source: the ElderSmiles presentation in docs/. Every hedge in that material
+ * Source: the Contemporary Dental presentation in docs/. Every hedge in that material
  * is preserved verbatim in meaning.
  */
 
 /** The promo card on the Careably home page. */
-export const ELDERSMILES_PROMO = {
+export const CONTEMPORARY_DENTAL_PROMO = {
   eyebrow: "A Careably Service",
-  heading: "Meet ElderSmiles",
+  heading: "Meet Contemporary Dental",
   body: "Professional dental care delivered right where residents live.",
-  link: "Learn more about ElderSmiles",
+  link: "Learn more about Contemporary Dental",
   highlights: [
     { icon: Sparkles, label: "Routine cleanings & exams" },
     { icon: ScanLine, label: "Digital x-rays" },
@@ -44,7 +44,7 @@ export interface ServiceCluster {
 }
 
 /** All seven services from the source, grouped for presentation only. */
-export const ELDERSMILES_CLUSTERS: readonly ServiceCluster[] = [
+export const CONTEMPORARY_DENTAL_CLUSTERS: readonly ServiceCluster[] = [
   {
     title: "Exams and diagnostics",
     services: [
@@ -76,8 +76,8 @@ export const ELDERSMILES_CLUSTERS: readonly ServiceCluster[] = [
  * The third point is the most important trust statement on the page.
  * Do not shorten or soften it.
  */
-export const ELDERSMILES_SPECIALIZED: readonly string[] = [
-  "ElderSmiles is designed for residents with dementia, limited mobility, behavioral challenges, and complex medical histories.",
+export const CONTEMPORARY_DENTAL_SPECIALIZED: readonly string[] = [
+  "Contemporary Dental is designed for residents with dementia, limited mobility, behavioral challenges, and complex medical histories.",
   "Care can include bedside treatment, shorter or multiple visits, consistent clinical teams, and minimally invasive options.",
   "Care is never forced. If a resident becomes distressed or declines treatment, we stop, document the event, notify the appropriate parties, and reassess at a later visit.",
 ]
@@ -86,11 +86,11 @@ export const ELDERSMILES_SPECIALIZED: readonly string[] = [
  * Coverage and billing. The Florida Medicaid sentence is a required
  * disclosure to a facility buyer and must not be trimmed for length.
  */
-export const ELDERSMILES_BILLING: readonly string[] = [
-  "ElderSmiles bills the resident's dental insurance or the resident directly.",
+export const CONTEMPORARY_DENTAL_BILLING: readonly string[] = [
+  "Contemporary Dental bills the resident's dental insurance or the resident directly.",
   "We credential with major Medicare Advantage and commercial dental plans, verify benefits during enrollment, and provide families with estimated coverage and out-of-pocket costs before treatment.",
   "Traditional Medicare Parts A and B do not cover routine dental care. Private-pay rates are available for residents without applicable coverage.",
 ]
 
-export const ELDERSMILES_MEDICAID_DISCLOSURE =
-  "ElderSmiles does not currently participate in Florida Medicaid."
+export const CONTEMPORARY_DENTAL_MEDICAID_DISCLOSURE =
+  "Contemporary Dental does not currently participate in Florida Medicaid."

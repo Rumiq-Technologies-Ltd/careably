@@ -25,8 +25,8 @@ const envSchema = z.object({
   }),
 
   /**
-   * Sender. Accepts either "inquiries@eldersmiles.com" or the
-   * "ElderSmiles <inquiries@eldersmiles.com>" display form, so this is not
+   * Sender. Accepts either "inquiries@careably.care" or the
+   * "Careably <inquiries@careably.care>" display form, so this is not
    * validated as a bare email address. The domain must be verified in Resend.
    */
   INQUIRY_FROM_EMAIL: z
